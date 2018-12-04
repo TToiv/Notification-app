@@ -27,13 +27,7 @@ function createMessage(){
 	//phoneGap and jQueryMobile do not support toast messages directly
     //so we can add this using toast.js
     new Toast({content: 'An example message.', duration: 5000}) 	
-}
-
-//function createMessage(){
-  //  new Toast({content: 'another message.', duration: 3000}
-    //          {position: 'top'});
-//}
-        	
+}  	
 
 //
 //section 2
@@ -57,6 +51,17 @@ function createDialog() {
 function dialogDismissed(buttonIndex) {
 	
 	if(buttonIndex==1) new Toast({content: "Take a break and eat something.", duration: 3000});
+        {
+            function createNotification()
+            {
+                cordova.plugins.notification.local.schedule({
+                    id:     1,
+                    title: "Break over?",
+                    text: "Back to work, peon!",
+                    trigger: { in 30, unit: 'second' }
+                });
+            }
+        }
    	else if(buttonIndex==2) new Toast({content: 'Carry on working.', duration: 3000});
 
 }
