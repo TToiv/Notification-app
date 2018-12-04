@@ -31,7 +31,8 @@ function createMessage(){
 }
 
 function createMessage(){
-    new Toast({content: 'another message.', duration: 3000});
+    new Toast({content: 'another message.', duration: 3000}
+              {position: 'bottom'});
 }
         	
 
