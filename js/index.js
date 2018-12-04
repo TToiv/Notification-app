@@ -26,8 +26,7 @@ $(document).on('pageinit', function() {
 function createMessage(){		
 	//phoneGap and jQueryMobile do not support toast messages directly
     //so we can add this using toast.js
-    new Toast({content: 'An example message.', duration: 5000}
-             {this.position: 'top'}); 	
+    new Toast({content: 'An example message.', duration: 5000} 	
 }
 
 //function createMessage(){
