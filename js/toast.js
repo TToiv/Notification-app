@@ -10,7 +10,7 @@ toast.js may be freely distributed under the MIT license.
 		this.timeout_id = null;
 		this.duration = 3000;
 		this.content = '';
-		this.position = '';
+		this.position = 'bottom';
 
 		if ( options && typeof options == "object" ){
 			if ( options.duration ){
