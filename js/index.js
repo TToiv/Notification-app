@@ -58,7 +58,7 @@ function dialogDismissed(buttonIndex) {
                 //    id:     1,
                   //  title: "Break over?",
                     //text: "Back to work, peon!",
-                    //trigger: { in 30, unit: 'second' }
+                    //trigger: { in 30000, unit: 'millisecond' }
         //        });
             //}
         //}
