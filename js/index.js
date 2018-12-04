@@ -1,5 +1,7 @@
 var notification_count=0;
 
+alert("qwerty");
+
 $(document).on('pageinit', function() {
 
 	$('#messageButton').on('click', function() {
