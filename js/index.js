@@ -57,20 +57,19 @@ function dialogDismissed(buttonIndex) {
 	alert("dialogDismissed ");
 	
     
-    /*if(buttonIndex==1) new Toast({content: "Take a break and eat something.", duration: 3000});
-    if (buttonIndex==1)    {
-            function createNotification()
-            {
-                cordova.plugins.notification.local.schedule({
+    if(buttonIndex==1) {
+        new Toast({content: "Take a break and eat something.", duration: 3000});
+   
+            cordova.plugins.notification.local.schedule({
                     id:     1,
                     title: "Break over?",
                     text: "Back to work, peon!",
                     trigger: { in 30, unit: 'second' }
                 });
-            }
+            
         }
    	else if(buttonIndex==2) new Toast({content: 'Carry on working.', duration: 3000});
-*/
+
 }
 
    
