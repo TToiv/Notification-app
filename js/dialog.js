@@ -1,4 +1,4 @@
-var notification_count=0;
+var notification_count = 0;
 
 $(document).on('pageinit', function() {
 
