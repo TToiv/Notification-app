@@ -10,14 +10,11 @@ $(document).on('pageinit', function() {
 
 function createDialog() {
 
-	//phonegap supports native dialog boxes.
-	//here's a simple example
-      
-	navigator.notification.confirm(
+	navigator.notification.confirm({
     	'Are you hungry?',  // message
         dialogDismissed,         // callback
         'Breaktime request',            // title
         ['Yes', 'No']                  // buttons
-    );
+    });
 
 }

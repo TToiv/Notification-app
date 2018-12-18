@@ -11,9 +11,6 @@ $(document).on('pageinit', function() {
    
 function createNotification() {
         					
-    //
-    //setup notification
-    //
 	cordova.plugins.notification.local.schedule({ 
     	id: 		1,
         title: 		"Hey you",
